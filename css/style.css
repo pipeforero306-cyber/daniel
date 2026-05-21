@@ -924,13 +924,13 @@ video {
 
 @media (max-width: 640px) and (orientation: portrait) {
     :root {
-        --hero-focus-x: 52%;
-        --hero-focus-y: 42%;
-        --hero-zoom: 1.02;
+        --hero-focus-x: 50%;
+        --hero-focus-y: 50%;
+        --hero-zoom: 1;
     }
 
     .hero {
-        background: transparent;
+        background: #050d1c;
         min-height: clamp(700px, 100dvh, 920px);
         padding-bottom: 0;
     }
@@ -943,10 +943,9 @@ video {
     }
 
     .hero-video {
-        object-fit: cover;
-        object-position: var(--hero-focus-x) var(--hero-focus-y);
-        transform: translateZ(0) scale(var(--hero-zoom));
-        background: #050d1c;
+        object-fit: contain;
+        object-position: center top;
+        transform: none;
     }
 
     .hero-content {
