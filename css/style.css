@@ -926,7 +926,7 @@ video {
     :root {
         --hero-focus-x: 50%;
         --hero-focus-y: 50%;
-        --hero-zoom: 1.08;
+        --hero-zoom-x: 1.14;
     }
 
     .hero {
@@ -945,7 +945,7 @@ video {
     .hero-video {
         object-fit: cover;
         object-position: var(--hero-focus-x) var(--hero-focus-y);
-        transform: translateZ(0) scale(var(--hero-zoom));
+        transform: translateZ(0) scaleX(var(--hero-zoom-x));
     }
 
     .hero-content {
